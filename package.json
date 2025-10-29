@@ -1,10 +1,13 @@
 {
+  "homepage": "https://seyedalifatehi.github.io/sample-show-webgl-vitrine-web",
   "name": "sample-show-webgl-vitrine-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
